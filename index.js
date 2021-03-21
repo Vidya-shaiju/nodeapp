@@ -46,8 +46,8 @@ function uploadFile(req, res){
     const AWS = require('aws-sdk');
 
     const s3 = new AWS.S3({
-        accessKeyId: "AKIA3WGJW4ZYSOQEE6HW",
-        secretAccessKey: "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"
+        accessKeyId: "accesskey",
+        secretAccessKey: "secretkey"
     });
 
     const fileName = 'contacts.csv';
@@ -79,8 +79,8 @@ function getFile(req, res){
     var AWS = require('aws-sdk');
     AWS.config.update(
       {
-        accessKeyId: "AKIA3WGJW4ZYSOQEE6HW",
-        secretAccessKey: "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",
+        accessKeyId: "accesskey",
+        secretAccessKey: "secretkey",
         region: 'ap-south-1'
       }
     );
